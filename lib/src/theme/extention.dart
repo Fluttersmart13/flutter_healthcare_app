@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_healthcare_app/src/theme/light_color.dart';
 
@@ -50,10 +51,10 @@ extension OnPressed on Widget {
           right: 0,
           top: 0,
           bottom: 0,
-          child: FlatButton(
-            shape: RoundedRectangleBorder(
-              borderRadius: borderRadius
-            ),
+          child: CupertinoButton(
+            // shape: RoundedRectangleBorder(
+            //   borderRadius: borderRadius
+            // ),
               onPressed: () {
                 if (onPressed != null) {
                   onPressed();

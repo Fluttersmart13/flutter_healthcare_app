@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_healthcare_app/src/theme/light_color.dart';
 import 'package:flutter_healthcare_app/src/model/dactor_model.dart';
@@ -169,13 +170,13 @@ class _DetailPageState extends State<DetailPage> {
                             SizedBox(
                               width: 10,
                             ),
-                            FlatButton(
+                            CupertinoButton(
                               color: Theme.of(context).primaryColor,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)
-                              ),
+                              // shape: RoundedRectangleBorder(
+                              //   borderRadius: BorderRadius.circular(10)
+                              // ),
                               onPressed: () {},
-                              child: Text("Make an appointment", style: TextStyles.titleNormal.white,).p(10),
+                              child: Text("Make an appointment", style: TextStyles.titleNormal.white,),
                             ),
                           ],
                         ).vP16
